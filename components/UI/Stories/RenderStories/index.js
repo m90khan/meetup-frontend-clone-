@@ -24,8 +24,8 @@ const RenderStories = () => {
   ];
   return (
     <>
-      {Array.from(data, (x) => (
-        <RenderStory story={x} />
+      {Array.from(data, (x, i) => (
+        <RenderStory story={x} key={i} />
       ))}
     </>
   );

@@ -25,8 +25,8 @@ const RenderGroups = () => {
   ];
   return (
     <>
-      {Array.from(data, (x) => (
-        <GroupItem group={x} />
+      {Array.from(data, (x, i) => (
+        <GroupItem group={x} key={i} />
       ))}
     </>
   );

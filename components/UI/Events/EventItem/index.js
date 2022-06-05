@@ -47,7 +47,7 @@ const EventItem = ({ event }) => {
         <Box display='flex' alignItems='center'>
           {event &&
             event.users &&
-            event.users.map((user) => (
+            event.users.map((user, i) => (
               <Image
                 borderRadius='full'
                 border='1px'
@@ -56,6 +56,7 @@ const EventItem = ({ event }) => {
                 mr='-8px'
                 src={user.src}
                 alt={user.name}
+                key={i}
               />
             ))}
 

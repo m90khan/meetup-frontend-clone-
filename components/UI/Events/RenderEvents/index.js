@@ -58,8 +58,8 @@ const RenderEvents = () => {
   ];
   return (
     <>
-      {Array.from(data, (x) => (
-        <EventItem event={x} />
+      {Array.from(data, (x, i) => (
+        <EventItem event={x} key={i} />
       ))}
     </>
   );
